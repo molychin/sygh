@@ -1,7 +1,7 @@
 	$(document).ready(function(){
-		
 		//自动执行
 		//隐藏所有表格项
+		//以下使用jquery语法；
 		$("#tab_zwms").toggle(3);
 		$("#tab_swot").toggle(3);
 		$("#tab_jjls").toggle(3);	

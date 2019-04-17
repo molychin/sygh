@@ -11,12 +11,12 @@ Author URI: http://peuland.cslg.cn
 html,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,table,th,td{margin:0;padding:0;}
 
 body,table{font-family:"宋体","微软雅黑","Tahoma","Verdana","Arial";font-size:14px;text-align:center}  /*网站字体尺寸为12px*/
-body{background-color:lightgray;color:darkslategray;}
+body{background-color:steelblue;color:darkslategray;}
 
 table{margin:0px auto;background-color:aliceblue;border-collapse:collapse;}
 table td,th{padding:2px;border:1px solid darkslategray;height:15px;}
-
-
+/*texearea {resize: none;}   /*禁止改变多行文本框大小*/
+textarea{resize: none;}   /*禁止改变多行文本框大小*/
 /*设置超链接*/
 a{text-decoration:none;}	/*超链接无下划线*/
 /*a:link{color:#000000}*/
@@ -26,9 +26,16 @@ a{text-decoration:none;}	/*超链接无下划线*/
 /*----------------class选择器-------------------------*/
 .center{text-align:center}	/*文本居中*/
 
-.button{ width:120px; height:30px;background:darkorange;font-weight:bold;} 	/*定义按钮尺寸*/
+.button{width:120px; height:30px;background:darkorange;font-weight:bold;} 	/*定义按钮尺寸*/
 .button1{width:120px; height:30px;background:gray;font-weight:bold;}
-.buttonBar{	background-color:lightslategray;}
+
+.button2{width:120px; height:25px;background-color:lightblue;font-weight:bold;text-align:left;}
+.button3{width:120px; height:25px;background-color:#EE82EE;font-weight:bold;text-align:left;}
+.button4{width:120px; height:25px;background-color:lightblue;font-weight:bold;text-align:left;color:red}  /*当前学生按钮*/
+.button5{width:120px; height:25px;background-color:#66CDAA;font-weight:bold;text-align:left}  /*未填信息学生按钮*/
+
+.buttonBar{background-color:lightslategray;}
+.text_readonly{background-color:gainsboro;}	/**/
 
 .zt-1{background-color:darkseagreen;}
 
@@ -40,9 +47,7 @@ a{text-decoration:none;}	/*超链接无下划线*/
 	background-color:lightsteelblue;
 }
 
-.red{
-	color:red;	
-}
+.red{color:red;}
 
 /*------------------学生照片显示----------------------*/
 .img_photo{
@@ -52,9 +57,7 @@ a{text-decoration:none;}	/*超链接无下划线*/
   text-align:center;
 }
 /*--------------------表格框线----------------------*/
-.border0{
-	border:0px solid;
-}
+.border0{border:0px solid;}
 
 /*----------------id 选择器-------------------------*/
 /*-----------------login.php------------------------*/
@@ -91,14 +94,11 @@ a{text-decoration:none;}	/*超链接无下划线*/
 	margin-bottom:5px;
 }
 
-.jbxx_div{
-	background-color:deepskyblue;
-}
+.jbxx_div{background-color:#ffee99;}
 
-.jsjy_textarea{
-	background-color:gainsboro;	
-}
+.jsjy_textarea{background-color:gainsboro;}
 
+.id_shuoming{background-color:thistle;font-weight:bold;}
 
 /*----------------selectXs_js.php-------------------------*/
 .banji_but{
@@ -124,7 +124,4 @@ a{text-decoration:none;}	/*超链接无下划线*/
 	//margin:5px 20px 5px 20px;
 	background:whitesmoke;
 }
-
-
-
 

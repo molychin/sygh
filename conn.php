@@ -1,5 +1,5 @@
 <?php
-	$conn = @ mysql_connect("localhost", "root", "caca070706") or die("数据库链接错误");
-	mysql_select_db("jwfzxt", $conn);	//必须首先选择数据库
-	mysql_query("set names 'gbk'"); //使用GBK中文编码;
+	$conn = @ mysqli_connect("localhost", "root", "cacalanii070706") or die("数据库链接错误");
+	mysqli_select_db($conn,"jwfzxt");	//必须首先选择数据库
+	mysqli_query($conn,"set names 'gbk'"); //使用GBK中文编码;
 ?>
