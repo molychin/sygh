@@ -12,14 +12,10 @@
 	$dqxn=$_SESSION['dqxn'];
 	$dqxq=$_SESSION['dqxq'];
 	$dqxnxq=$dqxn.'-'.$dqxq;	//当前学年学期：2016-2017-2
-	//echo $dqxnxq;
 	$xy=$_SESSION['xy'];
 	$njfw=$_SESSION['njfw'];
 	
-	//echo "xy=".$xy."<br>njfw=".$njfw;	
-	
 	$SQL="select bjmc from bjdmb where find_in_set(nj,'$njfw') and xymc='$xy'";
-	//echo $SQL;
 	$query=mysqli_query($conn,$SQL)or die("Error querying database0,not found,xsjbxx_js1.php.");
 	echo "<table class='border0'><tr><td valign='top'>";
 	echo "<table class='border0'><tr><td><table><tr>";

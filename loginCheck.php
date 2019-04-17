@@ -13,13 +13,10 @@
 	$dqxn=substr($dqxnxq,0,9);
 	$dqxq=substr($dqxnxq,strlen($dqxnxq)-1,1);
 	$njfw=$row['njfw'];	//参加《生涯规划》的年级范围；
-	
-
 		
 	//--获取当前用户基本信息
 	if($juese=='xs'){
 		$SQL="select xh,xm,mima,nj from xsjbxxb where xh='$zgh'";
-		//echo $SQL;		
 		$query=mysqli_query($conn,$SQL);
 		$row=mysqli_fetch_array($query,MYSQLI_ASSOC) or die('没有此用户！');
 		$kuMima=$row['mima'];
@@ -36,8 +33,6 @@
 		$xy=$row['bm'];		
 		$bmdm=$row['bmdm'];
 	}
-
-	//echo $zgh."----".$juese."-------".$qx;
 	
 	//设置session
 	session_start();
@@ -77,11 +72,4 @@
 		echo "<script> alert('用户名或密码不正确！'); </script>";
 		echo "<script> window.location.href='login.php' </script>";  		
 	}
-	
-	//跳转到工作页面（下达教学任务）
-	//重定向浏览器 
-	//header("Location: http://bbs.lampbrother.net"); 
-	//header("Location: jxrwb.php");
-	//确保重定向后，后续代码不会被执行 
-	//exit;	//确保以后代码不再被执行，无此语句，则会继续执行后面语句；
 ?>  

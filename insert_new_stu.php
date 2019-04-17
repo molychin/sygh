@@ -7,7 +7,6 @@
 	if(isset($_POST['submitSave'])){
 		$nj=$_POST['nianji'];
 		$SQL="insert into sygh_zysyghs(xh,xm) select xh,xm from xsjbxxb where nj='$nj'";
-		//echo $SQL."<br>";
 		$query=mysqli_query($conn,$SQL) or die('Error querying database 2,insert_new_stu.php.');	
 		echo "<script>alert('新生数据插入成功。');</script>";		
 	}

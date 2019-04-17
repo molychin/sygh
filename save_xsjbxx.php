@@ -9,7 +9,6 @@
 	$jtzz=$_POST['jiatingzhuzhi'];
 	$jtdh=$_POST['jiatingdianhua'];
 	$yzbm=$_POST['youzhengbianma'];	
-	//echo "$zgh / $lxdh / $jtzz / $jtdh / $yzbm";
 	$SQL="update xsjbxxb set lxdh='$lxdh',jtzz='$jtzz',jtdh='$jtdh',yzbm='$yzbm' where xh='$zgh'";
 	$query=mysqli_query($conn,$SQL);	
 
@@ -18,14 +17,12 @@
 	$xingqu=$_POST['xingqu'];
 	$techang=$_POST['techang'];
 	$nengli=$_POST['nengli'];	
-	//echo "<hr>$xingge / $xingqu  / $techang / $nengli<hr>";	
 	
 	//更新SWOT分析
 	$youshi=$_POST['youshi'];
 	$lieshi=$_POST['lieshi'];
 	$jiyu=$_POST['jiyu'];
 	$weixie=$_POST['weixie'];
-	//echo "<hr>$youshi / $lieshi / $jiyu / $weixie";	
 	
 	//更新如何解决劣势或不足
 	$jjls=$_POST['jjls'];

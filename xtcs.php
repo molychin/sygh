@@ -14,7 +14,6 @@
 		$njfw=$_POST['njfw'];
 		
 		$SQL="update systeminfo set sygh_dqxnxq='$dqxnxq',njfw='$njfw' where bmmc='xueshengchu'";
-		//echo $SQL."<br>";
 		$query=mysqli_query($conn,$SQL) or die('Error querying database 2,xtcs.php.');	
 		echo "<script>alert('系统参数保存成功！');</script>";
 

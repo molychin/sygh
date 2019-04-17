@@ -18,8 +18,7 @@
 	$dqxnxq=$row['sygh_dqxnxq'];
 	$dqxn=substr($dqxnxq,0,9);
 	$dqxq=substr($dqxnxq,strlen($dqxnxq)-1,1);
-	$njfw=$row['njfw'];	//参加《生涯规划》的年级范围；
-	
+	$njfw=$row['njfw'];	//参加《生涯规划》的年级范围；	
 	
 	//--获取当前用户基本信息
 	if($juese=='xs'){

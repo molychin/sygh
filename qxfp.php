@@ -6,7 +6,6 @@
 		$zgh=$_POST['jiaoshi'];
 		$qx=$_POST['juese'];
 		$SQL="update jsxxb set qx=qx*$qx where zgh='$zgh'";	
-		//echo $SQL;
 		$result =mysqli_query($conn,$SQL) or die('Error querying database1.');			
 	}else if(isset($_POST['delete'])){	//É¾³ý½ÇÉ«£»
 		$array_zgh=$_POST['checkbox'];

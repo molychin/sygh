@@ -24,7 +24,6 @@
 		$SQL="select bjmc,zymc,nj,xymc,bzrzgh from bjdmb where xymc='$xy' and find_in_set(nj,'$njfw') order by nj,bjmc";		
 	}
 
-	//echo $SQL;
 	$query=mysqli_query($conn,$SQL);
 	while($row=mysqli_fetch_array($query,MYSQLI_ASSOC)){
 		$bjmc=$row['bjmc'];
@@ -58,9 +57,7 @@
 		echo "<div id='div_js$bjmc'>";
 		echo "<select id='id_sel_bzr$bjmc' name='$bjmc'>";
 		$SQL1="select zgh,xm from bjdmb,jsxxb where bjdmb.bjdm='$bjmc' and bjdmb.bzrzgh=jsxxb.zgh";
-		//echo $SQL1;
 		$query1=mysqli_query($conn,$SQL1) or die('Error querying database,qxfp_bzr.php.');
-		//echo $query1;
 		if ($row=mysqli_fetch_array($query1,MYSQLI_ASSOC)){
 			$js_zgh=$row['zgh'];
 			$js_xm=$row['xm'];	

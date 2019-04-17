@@ -21,7 +21,6 @@
 	}
 	
 	$SQL="select xh,xm,xb,csrq,zzmm,lxdh,jtzz,jtdh,yzbm from xsjbxxb where xh='$zgh'";
-	//echo $SQL."<br>";
 	$query=mysqli_query($conn,$SQL);
 	if(!$query){
 		  echo "Error selected database: ".mysql_error();		
@@ -40,7 +39,6 @@
 			sszj_zp1,sszj_zp2,sszj_zp3,sszj_zp4,sszj_jy1,sszj_jy2,sszj_jy3,sszj_jy4,
 			pgtz_sxqk1,pgtz_tzqk1,pgtz_zdyj1,pgtz_sxqk2,pgtz_tzqk2,pgtz_zdyj2,pgtz_sxqk3,pgtz_tzqk3,pgtz_zdyj3,pgtz_sxqk4,pgtz_tzqk4,pgtz_zdyj4			
 			from sygh_zysyghs where xh='$zgh'";
-		//echo $SQL."<br>";	
 		
 		$query=mysqli_query($conn,$SQL);
 		$row=mysqli_fetch_array($query,MYSQLI_ASSOC) or die('Error querying database2,xsjbxx_xs.php.');

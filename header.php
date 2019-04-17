@@ -58,8 +58,6 @@
 			echo "| <a href='xsjbxx_js.php'>╟ЮжВхниС╨к</a> |";
 		}
 	}
-
-
 ?>
 
 <hr>
